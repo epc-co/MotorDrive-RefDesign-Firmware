@@ -40,7 +40,7 @@ Use this table to find the firmware package that match you **inverter** and your
 
 |      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*| ![](assets/ST_Logo%20(Custom).png)<br>STM32<br>*Nucleo G431RB*| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*| ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*|
 |  ---:|:-:|:-:|:-:|:-:|
-|**Adapter Board**|**[EPC9147A][epc9147a]**|**[EPC9147C][epc9147c]**|**[EPC9147D][epc9147d]**|**[EPC9147B][epc9147b]**|
+|**Adapter Board →**|**[EPC9147A][epc9147a]**|**[EPC9147C][epc9147c]**|**[EPC9147D][epc9147d]**|**[EPC9147B][epc9147b]**|
 |[EPC9176][epc9176]|**[Output][out_mchp_epc9176]**<br>[Source Code][src_mchp_epc9176]|**[Output][out_stm32_epc9176]**<br>[Source Code][src_stm32_epc9176]|-|**[Output][out_ti]**<br>[Source Code][src_ti]|
 |[EPC9193][epc9193]|-|-|-|-|
 |[EPC9193HC][epc9193]|-|-|-|-|

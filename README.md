@@ -41,18 +41,20 @@ Use this table to find the firmware package that match you **inverter** and your
 |      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*| ![](assets/ST_Logo%20(Custom).png)<br>STM32<br>*Nucleo G431RB*| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*| ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*|
 |  ---:|:-:|:-:|:-:|:-:|
 |**Adapter Board →**|**[EPC9147A][epc9147a]**|**[EPC9147C][epc9147c]**|**[EPC9147D][epc9147d]**|**[EPC9147B][epc9147b]**|
-|[EPC9176][epc9176]|**[Output][out_mchp_epc9176]**<br>[Source Code][src_mchp_epc9176]|**[Output][out_stm32_epc9176]**<br>[Source Code][src_stm32_epc9176]|-|**[Output][out_ti]**<br>[Source Code][src_ti]|
-|[EPC9193][epc9193]|-|-|-|-|
-|[EPC9193HC][epc9193]|-|-|-|-|
-|[EPC9194][epc9194]|-|**[Output][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|**[Output][out_renesas_epc9194]**<br>[Source Code][src_renesas_epc9194]|-|
-|[EPC9173][epc9173]|-|-|-|**[Output][out_ti]**<br>[Source Code][src_ti]|
-|[EPC9186][epc9186]|-|**[Output][out_stm32_epc9186]**<br>[Source Code][src_stm32_epc9186]|-|**[Output][out_ti]**<br>[Source Code][src_ti]|
-|[EPC9145][epc9145]|**[Output][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Output][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|-|
-|[EPC9146][epc9146]|**[Output][out_mchp_epc9146]**<br>[Source Code][src_mchp_epc9146]|**[Output][out_stm32_epc9146]**<br>[Source Code][src_stm32_epc9146]|-|**[Output][out_ti]**<br>[Source Code][src_ti]|
-|[EPC9167][epc9167]|-|-|-|-|
-|[EPC9167HC][epc9167]|-|-|-|**[Output][out_ti]**<br>[Source Code][src_ti]|
+|[EPC9176][epc9176]|**[Outputs][out_mchp_epc9176]**<br>[Source Code][src_mchp_epc9176]|**[Outputs][out_stm32_epc9176]**<br>[Source Code][src_stm32_epc9176]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
+|[EPC9193][epc9193]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|-|
+|[EPC9193HC][epc9193]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|-|
+|[EPC9194][epc9194]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|**[Outputs][out_renesas_epc9194]**<br>[Source Code][src_renesas_epc9194]|-|
+|[EPC9173][epc9173]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
+|[EPC9186][epc9186]|-|**[Outputs][out_stm32_epc9186]**<br>[Source Code][src_stm32_epc9186]|-|-|
+|[EPC9145][epc9145]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
+|[⚠️EPC9146][epc9146]|**[Outputs][out_mchp_epc9146]**<br>[Source Code][src_mchp_epc9146]|**[Outputs][out_stm32_epc9146]**<br>[Source Code][src_stm32_epc9146]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
+|[⚠️EPC9167][epc9167]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
+|[⚠️EPC9167HC][epc9167]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
 
-> Missing packages for a specific inverter can be easily derived starting from a project for a different inverter but with the same microcontroller
+> :warning: **Warning:** obsolete board
+
+> :memo: **Note:** Missing packages for a specific inverter can be easily derived starting from a project for a different inverter but with the same microcontroller
 
 <!-- ## Instructions
 
@@ -102,6 +104,8 @@ Use this table to find the firmware package that match you **inverter** and your
 [out_mchp_epc9146]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.0/sample-mb-33ep-epc9146_2_0_DummyNema34_14A_3_5A_1_5mohm_1_3krpm_100kHz_21ns_210412_output.zip
 [out_mchp_epc9145]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.0/sample-mb-33ep256mc506-mclv2.X-Dummy_9145_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_210806_output.zip
 [out_mchp_epc9176]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.0/sample-mb-33ep256mc506-mclv2.X-Dummy_9176_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_230125_output.zip
+[out_mchp_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.0/sample-mb-33ep256mc506-mclv2.X-Dummy_9194_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_240625_output.zip
 [src_mchp_epc9146]: /firmware/sample-mb-33ep-epc9146_2_0_DummyNema34_14A_3_5A_1_5mohm_1_3krpm_100kHz_21ns_210412/sample-mb-33ep-epc9146_2_0_DummyNema34_14A_3_5A_1_5mohm_1_3krpm_100kHz_21ns_210412.zip
 [src_mchp_epc9145]: /firmware/sample-mb-33ep256mc506-mclv2.X-Dummy_9145_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_210806/sample-mb-33ep256mc506-mclv2.X-Dummy_9145_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_210806.zip
 [src_mchp_epc9176]: /firmware/sample-mb-33ep256mc506-mclv2.X-Dummy_9176_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_230125/sample-mb-33ep256mc506-mclv2.X-Dummy_9176_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_230125.zip
+[src_mchp_epc9194]: /firmware/sample-mb-33ep256mc506-mclv2.X-Dummy_9194_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_240625/sample-mb-33ep256mc506-mclv2.X-Dummy_9194_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_240625.zip

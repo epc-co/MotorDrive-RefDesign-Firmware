@@ -47,7 +47,7 @@ Use this table to find the firmware package that match you **inverter** and your
 |[EPC9194][epc9194]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|**[Outputs][out_renesas_epc9194]**<br>[Source Code][src_renesas_epc9194]|-|
 |[EPC9173][epc9173]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
 |[EPC9186][epc9186]|-|**[Outputs][out_stm32_epc9186]**<br>[Source Code][src_stm32_epc9186]|-|-|
-|[EPC9145][epc9145]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
+|[⚠️EPC9145][epc9145]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
 |[⚠️EPC9146][epc9146]|**[Outputs][out_mchp_epc9146]**<br>[Source Code][src_mchp_epc9146]|**[Outputs][out_stm32_epc9146]**<br>[Source Code][src_stm32_epc9146]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
 |[⚠️EPC9167][epc9167]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
 |[⚠️EPC9167HC][epc9167]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|

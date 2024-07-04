@@ -2,7 +2,7 @@
 
 Repository for EPC's application reference designs firmware.
 
-Here you can find both the projects **source code** and the **compiled outputs** (binaries) if you want to start right away.
+Here you can find both the projects **source code** and the **compiled executables** (binaries) if you want to start right away.
 
 ## Motor Drive Setup
 
@@ -41,20 +41,20 @@ Use this table to find the firmware package that match you **inverter** and your
 |      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*| ![](assets/ST_Logo%20(Custom).png)<br>STM32<br>*Nucleo G431RB*| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*| ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*|
 |  ---:|:-:|:-:|:-:|:-:|
 |**Adapter Board →**|**[EPC9147A][epc9147a]**|**[EPC9147C][epc9147c]**|**[EPC9147D][epc9147d]**|**[EPC9147B][epc9147b]**|
-|[EPC9176][epc9176]|**[Outputs][out_mchp_epc9176]**<br>[Source Code][src_mchp_epc9176]|**[Outputs][out_stm32_epc9176]**<br>[Source Code][src_stm32_epc9176]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
-|[EPC9193][epc9193]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|-|
-|[EPC9193HC][epc9193]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|-|
-|[EPC9194][epc9194]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|**[Outputs][out_renesas_epc9194]**<br>[Source Code][src_renesas_epc9194]|-|
-|[EPC9173][epc9173]|**[Outputs][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Outputs][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
-|[EPC9186][epc9186]|-|**[Outputs][out_stm32_epc9186]**<br>[Source Code][src_stm32_epc9186]|-|-|
-|[⚠️EPC9145][epc9145]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
-|[⚠️EPC9146][epc9146]|**[Outputs][out_mchp_epc9146]**<br>[Source Code][src_mchp_epc9146]|**[Outputs][out_stm32_epc9146]**<br>[Source Code][src_stm32_epc9146]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
-|[⚠️EPC9167][epc9167]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
-|[⚠️EPC9167HC][epc9167]|**[Outputs][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Outputs][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Outputs][out_ti]**<br>[Source Code][src_ti]|
+|[EPC9176][epc9176]|**[Executables][out_mchp_epc9176]**<br>[Source Code][src_mchp_epc9176]|**[Executables][out_stm32_epc9176]**<br>[Source Code][src_stm32_epc9176]|-|**[Executables][out_ti]**<br>[Source Code][src_ti]|
+|[EPC9193][epc9193]|**[Executables][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Executables][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|-|
+|[EPC9193HC][epc9193]|**[Executables][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Executables][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|-|
+|[EPC9194][epc9194]|**[Executables][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Executables][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|**[Executables][out_renesas_epc9194]**<br>[Source Code][src_renesas_epc9194]|-|
+|[EPC9173][epc9173]|**[Executables][out_mchp_epc9194]**<br>[Source Code][src_mchp_epc9194]|**[Executables][out_stm32_epc9194]**<br>[Source Code][src_stm32_epc9194]|-|**[Executables][out_ti]**<br>[Source Code][src_ti]|
+|[EPC9186][epc9186]|-|**[Executables][out_stm32_epc9186]**<br>[Source Code][src_stm32_epc9186]|-|-|
+|[⚠️EPC9145][epc9145]|**[Executables][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Executables][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Executables][out_ti]**<br>[Source Code][src_ti]|
+|[⚠️EPC9146][epc9146]|**[Executables][out_mchp_epc9146]**<br>[Source Code][src_mchp_epc9146]|**[Executables][out_stm32_epc9146]**<br>[Source Code][src_stm32_epc9146]|-|**[Executables][out_ti]**<br>[Source Code][src_ti]|
+|[⚠️EPC9167][epc9167]|**[Executables][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Executables][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Executables][out_ti]**<br>[Source Code][src_ti]|
+|[⚠️EPC9167HC][epc9167]|**[Executables][out_mchp_epc9145]**<br>[Source Code][src_mchp_epc9145]|**[Executables][out_stm32_epc9145]**<br>[Source Code][src_stm32_epc9145]|-|**[Executables][out_ti]**<br>[Source Code][src_ti]|
 
 > :warning: **Warning:** obsolete board
 
-> :memo: **Note:** Missing packages for a specific inverter can be easily derived starting from a project for a different inverter but with the same microcontroller
+> :memo: **Note:** missing packages for a specific reference design can be easily derived starting from a project for a different inverter but with the same microcontroller
 
 <!-- ## Instructions
 

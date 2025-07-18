@@ -42,7 +42,7 @@ Use this table to find the firmware package that match you **inverter** and your
 
 |      | Teknic Motor (*DummyNema*)<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json) | Unitree A1 Motor<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/unitree_a1.json) |
 |  ---:|:-:|:-:|
-|**[EPC91118][epc91118]**<br>[STMCWB6 Desc (JSON)]()|**[Executables][out_stm32_epc91118_dummynema]**<br>[Source Code][src_stm32_epc91118_dummynema]<br>Sensorless|**[Executables][out_stm32_epc91118_unitree]**<br>[Source Code][src_stm32_epc91118_unitree]<br>Sensored|
+|**[EPC91118][epc91118]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91118.json)|**[Executables][out_stm32_epc91118_dummynema]**<br>[Source Code][src_stm32_epc91118_dummynema]<br>Sensorless|**[Executables][out_stm32_epc91118_unitree]**<br>[Source Code][src_stm32_epc91118_unitree]<br>Sensored|
 
 #### Boards w/ MCU interface connector
 

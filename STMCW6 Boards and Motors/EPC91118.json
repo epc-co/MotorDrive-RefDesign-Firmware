@@ -1,0 +1,254 @@
+{
+  "type": "inverter",
+  "contentVersion": "1.0",
+  "descVersion": 4,
+  "name": "EPC91118",
+  "PN": "AABBCC112233",
+  "description": "EPC23104\nMA732\nMCS1823-330",
+  "shortDescription": "",
+  "algorithmCompatibility": [
+    "FOC"
+  ],
+  "mcu": "STM32G431RBTx",
+  "clockSource": "internal_osc",
+  "clockFrequency": 170,
+  "motorDrives": [
+    {
+      "name": "M1",
+      "minRatedVoltage": 12,
+      "maxRatedVoltage": 55,
+      "maxRatedCurrent": 21,
+      "maxRatedPower": 500,
+      "features": [
+        {
+          "type": "CurrentSensing",
+          "name": "CurrentSensing",
+          "tRise": 100,
+          "hwVariants": [
+            {
+              "signals": {
+                "CURRENT_AMPL_U": [
+                  {
+                    "name": "PA0",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "CURRENT_AMPL_V": [
+                  {
+                    "name": "PB11",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "CURRENT_AMPL_W": [
+                  {
+                    "name": "PB2",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "ThreeShunt_AmplifiedCurrents",
+              "cost": 0,
+              "shuntResistor": 0.001,
+              "amplifyingNetworkVm": 3.3,
+              "opAmpGain": -44,
+              "amplifyingNetworkImax": 37.5,
+              "amplifyingNetworkPrating": 4,
+              "offsetNetworkAttenuation": 1,
+              "polarizationOffset": 1.65
+            }
+          ]
+        },
+        {
+          "type": "PhaseVoltageGeneration",
+          "name": "PhaseVoltageGeneration",
+          "driverName": "EPC23104",
+          "driverPN": "01",
+          "tNoise": 100,
+          "minDeadTime": 50,
+          "maxSwitchingFreq": 100,
+          "hwVariants": [
+            {
+              "signals": {
+                "PWM_CHU_H": [
+                  {
+                    "name": "PA8",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHV_H": [
+                  {
+                    "name": "PA9",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHW_H": [
+                  {
+                    "name": "PA10",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHU_L": [
+                  {
+                    "name": "PA7",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHV_L": [
+                  {
+                    "name": "PB0",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHW_L": [
+                  {
+                    "name": "PB1",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "DrivingHighAndLowSides",
+              "cost": 0,
+              "deadTime": 50,
+              "highSideSwitchesDrivingPolarity": "Active high",
+              "lowSideSwitchesDrivingPolarity": "Active high"
+            }
+          ]
+        },
+        {
+          "type": "VBusSensing",
+          "name": "VBusSensing",
+          "busVoltageDivider": 22.28,
+          "hwVariants": [
+            {
+              "signals": {
+                "VBUS": [
+                  {
+                    "name": "PA1",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "VBusSensing",
+              "cost": 0,
+              "busVoltageDivider": 22.27,
+              "busVoltageDividerR1": 100000,
+              "busVoltageDividerR2": 4700
+            }
+          ]
+        },
+        {
+          "type": "SpeedAndPositionSensing",
+          "name": "SpeedAndPositionSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "QENC_A": [
+                  {
+                    "name": "PA15",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_B": [
+                  {
+                    "name": "PB3",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_Z": [
+                  {
+                    "name": "PB10",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "QuadratureEncoderAbsolute",
+              "cost": 0
+            },
+            {
+              "signals": {
+                "QENC_A": [
+                  {
+                    "name": "PA15",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_B": [
+                  {
+                    "name": "PB3",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "QuadratureEncoderRelative",
+              "cost": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "type": "SerialPortCommunication",
+      "name": "SerialPortCommunication",
+      "hwVariants": [
+        {
+          "signals": {
+            "UART_TX": [
+              {
+                "name": "PA2",
+                "help": {},
+                "cost": 0
+              }
+            ],
+            "UART_RX": [
+              {
+                "name": "PA3",
+                "help": {},
+                "cost": 0
+              }
+            ]
+          },
+          "type": "Uart2WiresCommunication",
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "type": "Button",
+      "name": "Button",
+      "hwVariants": [
+        {
+          "signals": {
+            "BUTTON_TRIGGER": [
+              {
+                "name": "PC13",
+                "help": {},
+                "cost": 0
+              }
+            ]
+          },
+          "type": "PushButton",
+          "cost": 0,
+          "buttonTriggerEdge": "Rising Edge",
+          "buttonGpioConfig": "No Pull up - No Pull down"
+        }
+      ]
+    }
+  ]
+}

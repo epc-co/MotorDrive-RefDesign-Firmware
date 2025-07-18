@@ -1,0 +1,33 @@
+{
+    "id": "epc_dummy_motor",
+    "label": "EPC Dummy Nema Motor",
+    "hardwareFamily": "MOTOR",
+    "description": "EPC Demonstration Motor - Teknic M-3441P",
+
+    "compatibility": ["FOC", "sixStep"],
+
+    "polePairs": 4,
+
+    "nominalCurrent": 10.0,
+    "nominalDCVoltage": 300.0,
+    "rs": 0.4,
+    "ls": 0.466,
+    "magneticStructure": {
+        "type": "SM-PMSM"
+    },
+
+    "BEmfConstant": 10.2,
+    "inertia": 1.1,
+    "friction": 8.6,
+
+    "maxRatedSpeed": 3000,
+
+    "hallSensor": {
+        "sensorsDisplacement": 120,
+        "placementElectricalAngle": 300
+    },
+    "quadratureEncoder": {
+        "pulsesPerMechanicalRevolution": 2500,
+        "hasIndexPin": true
+    }
+}

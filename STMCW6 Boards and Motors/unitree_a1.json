@@ -1,0 +1,29 @@
+{
+    "id": "unitree_a1",
+    "label": "Unitree A1",
+    "hardwareFamily": "MOTOR",
+    "description": "Unitree A1 Motor",
+
+    "compatibility": ["FOC", "sixStep"],
+
+    "polePairs": 21,
+
+    "nominalCurrent": 50.0,
+    "nominalDCVoltage": 24.0,
+    "rs": 0.12,
+    "ls": 0.08,
+    "magneticStructure": {
+        "type": "SM-PMSM"
+    },
+
+    "BEmfConstant": 8.6,
+    "inertia": 1.1,
+    "friction": 8.6,
+
+    "maxRatedSpeed": 1700,
+
+    "quadratureEncoder": {
+        "pulsesPerMechanicalRevolution": 1024,
+        "hasIndexPin": true
+    }
+}

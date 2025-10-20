@@ -1,0 +1,267 @@
+{
+  "type": "power",
+  "contentVersion": "1.1",
+  "name": "EPC9196",
+  "longDescription": "",
+  "PN": "EPC9196",
+  "shortDescription": "",
+  "motorDrives": [
+    {
+      "name": "Board features",
+      "connectorType": "morpho",
+      "minRatedVoltage": 30,
+      "maxRatedVoltage": 170,
+      "features": [
+        {
+          "type": "CurrentSensing",
+          "name": "CurrentSensing",
+          "tRise": 100,
+          "hwVariants": [
+            {
+              "signals": {
+                "CURRENT_AMPL_U": [
+                  {
+                    "name": "ML28",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "CURRENT_AMPL_W": [
+                  {
+                    "name": "ML38",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "CURRENT_AMPL_V": [
+                  {
+                    "name": "ML36",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "ThreeShunt_AmplifiedCurrents",
+              "cost": 0,
+              "amplifyingNetworkImax": 63.5,
+              "polarizationOffset": 1.65,
+              "shuntResistor": 0.001,
+              "amplifyingNetworkPrating": 4,
+              "offsetNetworkAttenuation": 1,
+              "opAmpGain": 26.4,
+              "amplifyingNetworkVm": 3.3
+            }
+          ]
+        },
+        {
+          "type": "PhaseVoltageGeneration",
+          "name": "PhaseVoltageGeneration",
+          "hwVariants": [
+            {
+              "signals": {
+                "PWM_CHU_H": [
+                  {
+                    "name": "MR23",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHV_H": [
+                  {
+                    "name": "MR21",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHW_H": [
+                  {
+                    "name": "MR33",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHU_L": [
+                  {
+                    "name": "ML26",
+                    "help": {},
+                    "cost": 0
+                  },
+                  {
+                    "name": "MR15",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHV_L": [
+                  {
+                    "name": "ML34",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHW_L": [
+                  {
+                    "name": "MR24",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "DrivingHighAndLowSides",
+              "cost": 0,
+              "deadTime": 500,
+              "highSideSwitchesDrivingPolarity": "Active high",
+              "lowSideSwitchesDrivingPolarity": "Active high"
+            }
+          ],
+          "driverName": "Gate Driver + Discrete GaN FET",
+          "driverPN": "STDRIVEG600 + EPC2304",
+          "minDeadTime": 50,
+          "tNoise": 100,
+          "maxSwitchingFreq": 60
+        },
+        {
+          "type": "SpeedAndPositionSensing",
+          "name": "SpeedAndPositionSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "QENC_A": [
+                  {
+                    "name": "ML17",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_B": [
+                  {
+                    "name": "MR31",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_Z": [
+                  {
+                    "name": "MR25",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "QuadratureEncoderAbsolute",
+              "cost": 0
+            },
+            {
+              "signals": {
+                "QENC_A": [
+                  {
+                    "name": "ML17",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_B": [
+                  {
+                    "name": "MR31",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "QuadratureEncoderRelative",
+              "cost": 0
+            }
+          ]
+        },
+        {
+          "type": "VBusSensing",
+          "name": "VBusSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "VBUS": [
+                  {
+                    "name": "ML30",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "VBusSensing",
+              "cost": 0,
+              "busVoltageDividerR2": 100000,
+              "busVoltageDividerR1": 1650,
+              "busVoltageDivider": 61.6
+            }
+          ],
+          "busVoltageDivider": 61.61
+        },
+        {
+          "type": "PhaseVoltageSensing",
+          "name": "PhaseVoltageSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "VOLTAGE_DIV_FILT_U": [
+                  {
+                    "name": "ML37",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "VOLTAGE_DIV_FILT_V": [
+                  {
+                    "name": "MR34",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "VOLTAGE_DIV_FILT_W": [
+                  {
+                    "name": "MR30",
+                    "help": {},
+                    "cost": 0
+                  },
+                  {
+                    "name": "MR11",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "ThreePhaseVoltageDividersFiltered",
+              "cost": 0,
+              "voltageDividerValue": 0.02922,
+              "cutoffPulse": 33223
+            }
+          ]
+        },
+        {
+          "type": "TemperatureSensing",
+          "name": "TemperatureSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "TEMPERATURE_NTC": [
+                  {
+                    "name": "ML35",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "NTCThermistor",
+              "cost": 0,
+              "maxSensorTemperature": 150,
+              "gain": 8,
+              "v0": 2300,
+              "t0": 25
+            }
+          ]
+        }
+      ],
+      "maxRatedCurrent": 35
+    }
+  ],
+  "descVersion": 4
+}

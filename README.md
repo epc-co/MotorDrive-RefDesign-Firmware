@@ -46,7 +46,7 @@ Use this table to find the firmware package that match you **inverter** and your
 
 #### Boards w/ MCU interface connector
 
-|      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB5<br>*Nucleo G431RB*| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB6<br>*Nucleo G431RB*| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*| ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*|
+|      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB5<br>*Nucleo G431RB*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB6<br>*Nucleo G431RB*<br>[Motor JSON](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json)| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*<br></br> | ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*<br></br>|
 |  ---:|:-:|:-:|:-:|:-:|:-:|
 |**Adapter Board →**|**[EPC9147A][epc9147a]**|**[EPC9147C][epc9147c]**|**[EPC9147C][epc9147c]**|**[EPC9147D][epc9147d]**|**[EPC9147B][epc9147b]**|
 |**[EPC91200][epc91200]**|-|-|**[Executables][out_stm32_epc91200]**<br>[Source Code][src_stm32_epc91200]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC91200.json)|-|-|

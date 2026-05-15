@@ -42,7 +42,8 @@ Use this table to find the firmware package that match you **inverter** and your
 
 |      | Teknic Motor (*DummyNema*)<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json) | Unitree A1 Motor<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/unitree_a1.json) |
 |  ---:|:-:|:-:|
-|**[EPC91118][epc91118]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91118.json)|**[Executables][out_stm32_epc91118_dummynema]**<br>[Source Code][src_stm32_epc91118_dummynema]<br>Sensorless|**[Executables][out_stm32_epc91118_unitree]**<br>[Source Code][src_stm32_epc91118_unitree]<br>Sensored|
+|**[EPC91118][epc91118]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91118.json)|*Sensorless*<br>**[Executables][out_stm32_epc91118_dummynema]**<br>[Source Code][src_stm32_epc91118_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91118_unitree]**<br>[Source Code][src_stm32_epc91118_unitree]|
+|**[EPC91120][epc91120]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91120.json)|*Sensorless*<br>**[Executables][out_stm32_epc91120_dummynema]**<br>[Source Code][src_stm32_epc91120_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91120_unitree]**<br>[Source Code][src_stm32_epc91120_unitree]|
 
 #### Boards w/ MCU interface connector
 
@@ -89,6 +90,7 @@ Use this table to find the firmware package that match you **inverter** and your
 [epc91104]: https://epc-co.com/epc/products/evaluation-boards/epc91104
 [epc9196]: https://epc-co.com/epc/products/evaluation-boards/epc9196
 [epc91118]: https://epc-co.com/epc/products/evaluation-boards/epc91118
+[epc91120]: https://epc-co.com/epc/products/evaluation-boards/epc91120
 [epc9176]: https://epc-co.com/epc/products/evaluation-boards/EPC9176
 [epc9193]: https://epc-co.com/epc/products/demo-boards/EPC9193.aspx
 [epc9194]: https://epc-co.com/epc/products/evaluation-boards/EPC9194
@@ -105,6 +107,8 @@ Use this table to find the firmware package that match you **inverter** and your
 [out_stm32_epc9196]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/G431-EPC9196_1_0-DummyNema34_50k_50n.zip
 [out_stm32_epc91118_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/EPC91118_DummyNema_50kHz_50ns_sensorless.zip
 [out_stm32_epc91118_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/EPC91118_Unitree_100kHz_50ns_sensored.zip
+[out_stm32_epc91120_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/EPC91120_DummyNema_50kHz_50ns_sensorless.zip
+[out_stm32_epc91120_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/EPC91120_Unitree_100kHz_50ns_sensored.zip
 [out_stm32_epc9145]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/G431-EPC9145-DummyNema34_50k_100n_output.zip
 [out_stm32_epc9146]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/G431-EPC9146_2_1-DummyNema34_50k_100n_output.zip
 [out_stm32_epc9176]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.1/G431-EPC9176_1_0-DummyNema34_50k_100n_output.zip
@@ -116,6 +120,8 @@ Use this table to find the firmware package that match you **inverter** and your
 [src_stm32_epc9196]: /firmware/G431-EPC9196_1_0-DummyNema34_50k_50n/G431-EPC9196_1_0-DummyNema34_50k_50n.zip
 [src_stm32_epc91118_dummynema]: /firmware/EPC91118_DummyNema_50kHz_50ns_sensorless/EPC91118_DummyNema_50kHz_50ns_sensorless.zip
 [src_stm32_epc91118_unitree]: /firmware/EPC91118_Unitree_100kHz_50ns_sensored/EPC91118_Unitree_100kHz_50ns_sensored.zip
+[src_stm32_epc91120_dummynema]: /firmware/EPC91120_DummyNema_50kHz_50ns_sensorless/EPC91120_DummyNema_50kHz_50ns_sensorless.zip
+[src_stm32_epc91120_unitree]: /firmware/EPC91120_Unitree_100kHz_50ns_sensored/EPC91120_Unitree_100kHz_50ns_sensored.zip
 [src_stm32_epc9145]: /firmware/G431-EPC9145-DummyNema34_50k_100n/G431-EPC9145-DummyNema34_50k_100n.zip
 [src_stm32_epc9146]: /firmware/G431-EPC9146_2_1-DummyNema34_50k_100n/G431-EPC9146_2_1-DummyNema34_50k_100n.zip
 [src_stm32_epc9176]: /firmware/G431-EPC9176_1_0-DummyNema34_50k_100n/G431-EPC9176_1_0-DummyNema34_50k_100n.zip

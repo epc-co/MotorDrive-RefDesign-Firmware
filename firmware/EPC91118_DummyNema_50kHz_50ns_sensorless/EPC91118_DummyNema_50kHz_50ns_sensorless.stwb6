@@ -1,289 +1,22 @@
 {
   "version": 15,
-  "details": {
-    "steps": {
-      "powerSupply_0": {
-        "nominalDcBusVoltage": 48,
-        "nominalCurrent": "Number.NaN",
-        "maxCurrent_pk": "Number.NaN",
-        "icl": {
-          "enable": false,
-          "polarity": "",
-          "changeStateAfter": "Number.NaN",
-          "capChargingDelay": "Number.NaN",
-          "voltageThreshold": "Number.NaN"
-        }
-      },
-      "powerSwitches_0": {
-        "setting": {
-          "PWMFrequency": 50000,
-          "chargeBootCapDuty": "Number.NaN",
-          "chargeBootCapMs": "Number.NaN",
-          "drivingTopology": ""
-        }
-      },
-      "currentSensing_0": {
-        "executionRate": 2,
-        "topology": "",
-        "topologyData": {
-          "_tag": "3sh",
-          "ampMode": "",
-          "sensing": {
-            "amplification": "external",
-            "shuntResistor": "Number.NaN",
-            "gain": "Number.NaN",
-            "tNoise": "Number.NaN",
-            "tRise": "Number.NaN",
-            "maxModulation": "Number.NaN",
-            "samplingTime": "Number.NaN"
-          }
-        },
-        "ocpData": {
-          "enable": false
-        }
-      },
-      "speedSensing_0": {
-        "mainSensorParams": {
-          "speedSensorMode": "",
-          "maxAllowedErrors": "Number.NaN",
-          "sensorParams": {
-            "_tag": "pll",
-            "sensorlessSpeedFeedback": true,
-            "varianceThreshold": "Number.NaN",
-            "loopAverageSpeedDepth": "Number.NaN",
-            "observerAverageSpeedDepth": "Number.NaN",
-            "autoCalculate": true,
-            "g1Observer": "Number.NaN",
-            "g2Observer": "Number.NaN",
-            "bemfTolerance": "Number.NaN",
-            "bemfGain": "Number.NaN",
-            "F1": "Number.NaN",
-            "F2": "Number.NaN",
-            "pll": {
-              "KpKi": {
-                "P": {
-                  "num": "Number.NaN",
-                  "den": "Number.NaN"
-                },
-                "I": {
-                  "num": "Number.NaN",
-                  "den": "Number.NaN"
-                }
-              }
-            }
-          }
-        },
-        "auxSensorParams": {
-          "enableAuxSensing": false,
-          "speedSensorMode": "",
-          "maxAllowedErrors": "Number.NaN",
-          "sensorParams": {
-            "_tag": "cordic",
-            "sensorlessSpeedFeedback": true,
-            "varianceThreshold": "Number.NaN",
-            "loopAverageSpeedFIFO": "Number.NaN",
-            "observerAverageSpeedFIFO": "Number.NaN",
-            "autoCalculate": true,
-            "g1Observer": "Number.NaN",
-            "g2Observer": "Number.NaN",
-            "bemfTolerance": "Number.NaN",
-            "bemfGain": "Number.NaN",
-            "bemfQualityFactor": "Number.NaN",
-            "maxApplicationAcc": "Number.NaN",
-            "F1": "Number.NaN",
-            "F2": "Number.NaN"
-          }
-        },
-        "startupParams": {
-          "startupProfile": {
-            "initialElectricalAngle": "Number.NaN",
-            "pts": [
-              {
-                "duration": "Number.NaN",
-                "speedTarget": "Number.NaN",
-                "currVoltTarget": "Number.NaN"
-              },
-              {
-                "duration": "Number.NaN",
-                "speedTarget": "Number.NaN",
-                "currVoltTarget": "Number.NaN"
-              },
-              {
-                "duration": "Number.NaN",
-                "speedTarget": "Number.NaN",
-                "currVoltTarget": 2
-              },
-              {
-                "duration": "Number.NaN",
-                "speedTarget": 1500,
-                "currVoltTarget": 2
-              },
-              {
-                "duration": "Number.NaN",
-                "speedTarget": 1500,
-                "currVoltTarget": 2
-              },
-              {
-                "duration": "Number.NaN",
-                "speedTarget": 1500,
-                "currVoltTarget": 2
-              },
-              {
-                "duration": "Number.NaN",
-                "speedTarget": 1500,
-                "currVoltTarget": 2
-              }
-            ],
-            "sensorlessStartingPhase": "Number.NaN",
-            "onTheFlyStartupEnabled": false
-          },
-          "startupExitCond": {
-            "startUpSpeedThresh": "Number.NaN",
-            "consecutiveCorrectMeasures": "Number.NaN",
-            "speedBandToleranceLowerLimit": "Number.NaN",
-            "speedBandToleranceUpperLimit": "Number.NaN"
-          },
-          "FOCSwitchOver": {
-            "revupToFocSwitchOverEnabled": true,
-            "focSwitchOverDuration": "Number.NaN"
-          }
-        }
-      },
-      "driveManagement_0": {
-        "currentReg": {
-          "controlMode": "",
-          "autoPI": true,
-          "KpKi": {
-            "P": "Number.NaN",
-            "I": "Number.NaN"
-          },
-          "cutOffFrequency": "Number.NaN",
-          "useMTPA": false,
-          "feedForward": false,
-          "MTPATarget": "Number.NaN"
-        },
-        "speedReg": {
-          "executionRate": "Number.NaN",
-          "targetSpeed": "Number.NaN",
-          "commutationTime": "Number.NaN",
-          "KpKi": {
-            "P": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            },
-            "I": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            }
-          },
-          "autoPI": true
-        },
-        "torqueReg": {
-          "target": "Number.NaN",
-          "KpKi": {
-            "P": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            },
-            "I": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            }
-          }
-        },
-        "fluxReg": {
-          "target": "Number.NaN",
-          "KpKi": {
-            "P": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            },
-            "I": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            }
-          }
-        },
-        "fluxWeak": {
-          "enabled": false,
-          "voltageLimit": "Number.NaN",
-          "KpKi": {
-            "P": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            },
-            "I": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
-            }
-          }
-        },
-        "posReg": {
-          "executionRate": "Number.NaN",
-          "KpKiKd": {
-            "P": {
-              "num": 10000,
-              "den": 1024
-            },
-            "D": {
-              "num": 1000,
-              "den": 16
-            },
-            "I": {
-              "num": 1000,
-              "den": 32768
-            }
-          }
-        },
-        "debugSettings": {
-          "openLoop": {
-            "enabled": true
-          }
-        },
-        "modulationFlags": {
-          "overModulation": false,
-          "discontinuousPWM": false
-        }
-      }
-    }
-  },
   "algorithm": "FOC",
   "description": "",
-  "checkList": {},
+  "workBenchVersion": "6.4.2",
+  "workBenchVersionFileCreation": "6.4.2",
   "hardwares": {
     "type": "INVERTER",
-    "motor": [
-      {
-        "polePairs": 4,
-        "id": "user.epc_dummy_nema_motor",
-        "label": "EPC Dummy Nema Motor",
-        "hardwareFamily": "MOTOR",
-        "description": "EPC Demonstration Motor - Teknic M-3441P",
-        "compatibility": [
-          "FOC",
-          "sixStep"
-        ],
-        "nominalCurrent": 35,
-        "nominalDCVoltage": 300,
-        "rs": 0.4,
-        "ls": 0.466,
-        "magneticStructure": {
-          "type": "SM-PMSM"
-        },
-        "BEmfConstant": 10,
-        "inertia": 1.1,
-        "friction": 8.6,
-        "maxRatedSpeed": 3000,
-        "hallSensor": {
-          "sensorsDisplacement": 120,
-          "placementElectricalAngle": 300
-        },
-        "quadratureEncoder": {
-          "pulsesPerMechanicalRevolution": 2500,
-          "hasIndexPin": true
-        }
-      }
-    ],
+    "inverter": {
+      "hardwareFamily": "INVERTER",
+      "id": "user.EPC91118",
+      "label": "EPC91118",
+      "description": "EPC23104\nMA732\nMCS1823-330",
+      "compatibility": [
+        "FOC"
+      ],
+      "descVersion": 5,
+      "contentVersion": "1.0"
+    },
     "control": {
       "hardwareFamily": "CONTROL",
       "mcu": {
@@ -366,37 +99,24 @@
                 "name": "CurrentSensing",
                 "hwVariants": [
                   {
-                    "type": "ThreeShunt_AmplifiedCurrents",
+                    "type": "TwoICSCurrents",
                     "signals": {
-                      "CURRENT_AMPL_U": [
+                      "CURRENT_ICS_U": [
                         {
                           "name": "PA0",
                           "help": {},
                           "cost": 0
                         }
                       ],
-                      "CURRENT_AMPL_V": [
+                      "CURRENT_ICS_V": [
                         {
                           "name": "PB11",
                           "help": {},
                           "cost": 0
                         }
-                      ],
-                      "CURRENT_AMPL_W": [
-                        {
-                          "name": "PB2",
-                          "help": {},
-                          "cost": 0
-                        }
                       ]
                     },
-                    "shuntResistor": 0.001,
-                    "amplifyingNetworkImax": 37.5,
-                    "amplifyingNetworkVm": 3.3,
-                    "amplifyingNetworkPrating": 4,
-                    "opAmpGain": -44,
-                    "offsetNetworkAttenuation": 1,
-                    "polarizationOffset": 1.65,
+                    "icsGain": 0.044,
                     "cost": 0
                   }
                 ],
@@ -555,23 +275,44 @@
         "link": ""
       }
     ],
-    "inverter": {
-      "hardwareFamily": "INVERTER",
-      "id": "user.EPC91118",
-      "label": "EPC91118",
-      "description": "EPC23104\nMA732\nMCS1823-330",
-      "compatibility": [
-        "FOC"
-      ],
-      "descVersion": 5,
-      "contentVersion": "1.0"
-    },
+    "motor": [
+      {
+        "polePairs": 4,
+        "id": "user.epc_dummy_nema_motor",
+        "label": "EPC Dummy Nema Motor",
+        "hardwareFamily": "MOTOR",
+        "description": "EPC Demonstration Motor - Teknic M-3441P",
+        "compatibility": [
+          "FOC",
+          "sixStep"
+        ],
+        "nominalCurrent": 35,
+        "nominalDCVoltage": 300,
+        "rs": 0.4,
+        "ls": 0.466,
+        "magneticStructure": {
+          "type": "SM-PMSM"
+        },
+        "BEmfConstant": 10,
+        "inertia": 1.1,
+        "friction": 8.6,
+        "maxRatedSpeed": 3000,
+        "hallSensor": {
+          "sensorsDisplacement": 120,
+          "placementElectricalAngle": 300
+        },
+        "quadratureEncoder": {
+          "pulsesPerMechanicalRevolution": 2500,
+          "hasIndexPin": true
+        }
+      }
+    ],
     "connections": [
       {
-        "motor": 0,
+        "ctrlConn": 0,
         "power": 0,
         "drive": 0,
-        "ctrlConn": 0
+        "motor": 0
       }
     ],
     "constrains": {
@@ -584,47 +325,8 @@
               "type": "CurrentSensing",
               "hwVariants": [
                 {
-                  "name": "ThreeShunt_AmplifiedCurrents",
+                  "name": "TwoICSCurrents",
                   "swVariants": [
-                    {
-                      "name": "DualADCs",
-                      "solutions": [
-                        {
-                          "ip": [
-                            "ADC1",
-                            "ADC2"
-                          ],
-                          "sharedSignal": "CURRENT_AMPL_V",
-                          "signals": [
-                            {
-                              "name": "CURRENT_AMPL_U",
-                              "pin": "PA0",
-                              "peripheral": "ADC1_IN1",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_W",
-                              "pin": "PB2",
-                              "peripheral": "ADC2_IN12",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_V",
-                              "pin": "PB11",
-                              "peripheral": "ADC2_IN14",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_V",
-                              "pin": "PB11",
-                              "peripheral": "ADC1_IN14",
-                              "help": ""
-                            }
-                          ],
-                          "cost": 0
-                        }
-                      ]
-                    },
                     {
                       "name": "DualADCsNoSharedPhase",
                       "solutions": [
@@ -635,48 +337,15 @@
                           ],
                           "signals": [
                             {
-                              "name": "CURRENT_AMPL_U",
+                              "name": "CURRENT_ICS_U",
                               "pin": "PA0",
                               "peripheral": "ADC1_IN1",
                               "help": ""
                             },
                             {
-                              "name": "CURRENT_AMPL_V",
-                              "pin": "PB11",
-                              "peripheral": "ADC1_IN14",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_W",
-                              "pin": "PB2",
-                              "peripheral": "ADC2_IN12",
-                              "help": ""
-                            }
-                          ],
-                          "cost": 0
-                        },
-                        {
-                          "ip": [
-                            "ADC2",
-                            "ADC1"
-                          ],
-                          "signals": [
-                            {
-                              "name": "CURRENT_AMPL_U",
-                              "pin": "PA0",
-                              "peripheral": "ADC1_IN1",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_V",
+                              "name": "CURRENT_ICS_V",
                               "pin": "PB11",
                               "peripheral": "ADC2_IN14",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_W",
-                              "pin": "PB2",
-                              "peripheral": "ADC2_IN12",
                               "help": ""
                             }
                           ],
@@ -689,52 +358,15 @@
                           ],
                           "signals": [
                             {
-                              "name": "CURRENT_AMPL_U",
+                              "name": "CURRENT_ICS_U",
                               "pin": "PA0",
                               "peripheral": "ADC2_IN1",
                               "help": ""
                             },
                             {
-                              "name": "CURRENT_AMPL_V",
+                              "name": "CURRENT_ICS_V",
                               "pin": "PB11",
                               "peripheral": "ADC1_IN14",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_W",
-                              "pin": "PB2",
-                              "peripheral": "ADC2_IN12",
-                              "help": ""
-                            }
-                          ],
-                          "cost": 0
-                        }
-                      ]
-                    },
-                    {
-                      "name": "SingleADC",
-                      "solutions": [
-                        {
-                          "ip": [
-                            "ADC2"
-                          ],
-                          "signals": [
-                            {
-                              "name": "CURRENT_AMPL_U",
-                              "pin": "PA0",
-                              "peripheral": "ADC2_IN1",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_V",
-                              "pin": "PB11",
-                              "peripheral": "ADC2_IN14",
-                              "help": ""
-                            },
-                            {
-                              "name": "CURRENT_AMPL_W",
-                              "pin": "PB2",
-                              "peripheral": "ADC2_IN12",
                               "help": ""
                             }
                           ],
@@ -937,6 +569,248 @@
       "critical": []
     }
   },
-  "workBenchVersion": "6.4.0",
-  "workBenchVersionFileCreation": "6.4.0"
+  "checkList": {},
+  "details": {
+    "steps": {
+      "powerSupply_0": {
+        "nominalDcBusVoltage": 48,
+        "nominalCurrent": "Number.NaN",
+        "maxCurrent_pk": "Number.NaN",
+        "icl": {
+          "enable": false,
+          "polarity": "",
+          "changeStateAfter": "Number.NaN",
+          "capChargingDelay": "Number.NaN",
+          "voltageThreshold": "Number.NaN"
+        }
+      },
+      "powerSwitches_0": {
+        "setting": {
+          "PWMFrequency": 50000,
+          "chargeBootCapDuty": "Number.NaN",
+          "chargeBootCapMs": "Number.NaN",
+          "drivingTopology": ""
+        }
+      },
+      "currentSensing_0": {
+        "executionRate": 2,
+        "topology": "",
+        "topologyData": {
+          "_tag": "ics",
+          "sensing": {
+            "gain": "Number.NaN",
+            "tNoise": "Number.NaN",
+            "tRise": "Number.NaN",
+            "samplingTime": "Number.NaN"
+          }
+        },
+        "ocpData": {
+          "enable": false
+        }
+      },
+      "speedSensing_0": {
+        "mainSensorParams": {
+          "speedSensorMode": "",
+          "maxAllowedErrors": "Number.NaN",
+          "sensorParams": {
+            "_tag": "pll",
+            "sensorlessSpeedFeedback": true,
+            "varianceThreshold": "Number.NaN",
+            "loopAverageSpeedDepth": "Number.NaN",
+            "observerAverageSpeedDepth": "Number.NaN",
+            "autoCalculate": true,
+            "g1Observer": "Number.NaN",
+            "g2Observer": "Number.NaN",
+            "bemfTolerance": "Number.NaN",
+            "bemfGain": "Number.NaN",
+            "F1": "Number.NaN",
+            "F2": "Number.NaN",
+            "pll": {
+              "KpKi": {
+                "P": {
+                  "num": "Number.NaN",
+                  "den": "Number.NaN"
+                },
+                "I": {
+                  "num": "Number.NaN",
+                  "den": "Number.NaN"
+                }
+              }
+            }
+          }
+        },
+        "auxSensorParams": {
+          "enableAuxSensing": false,
+          "speedSensorMode": "",
+          "maxAllowedErrors": "Number.NaN",
+          "sensorParams": {
+            "_tag": "cordic",
+            "sensorlessSpeedFeedback": true,
+            "varianceThreshold": "Number.NaN",
+            "loopAverageSpeedFIFO": "Number.NaN",
+            "observerAverageSpeedFIFO": "Number.NaN",
+            "autoCalculate": true,
+            "g1Observer": "Number.NaN",
+            "g2Observer": "Number.NaN",
+            "bemfTolerance": "Number.NaN",
+            "bemfGain": "Number.NaN",
+            "bemfQualityFactor": "Number.NaN",
+            "maxApplicationAcc": "Number.NaN",
+            "F1": "Number.NaN",
+            "F2": "Number.NaN"
+          }
+        },
+        "startupParams": {
+          "startupProfile": {
+            "initialElectricalAngle": "Number.NaN",
+            "pts": [
+              {
+                "duration": "Number.NaN",
+                "speedTarget": "Number.NaN",
+                "currVoltTarget": "Number.NaN"
+              },
+              {
+                "duration": "Number.NaN",
+                "speedTarget": "Number.NaN",
+                "currVoltTarget": "Number.NaN"
+              },
+              {
+                "duration": "Number.NaN",
+                "speedTarget": "Number.NaN",
+                "currVoltTarget": 2
+              },
+              {
+                "duration": "Number.NaN",
+                "speedTarget": "Number.NaN",
+                "currVoltTarget": 2
+              },
+              {
+                "duration": "Number.NaN",
+                "speedTarget": "Number.NaN",
+                "currVoltTarget": 2
+              },
+              {
+                "duration": "Number.NaN",
+                "speedTarget": "Number.NaN",
+                "currVoltTarget": 2
+              },
+              {
+                "duration": "Number.NaN",
+                "speedTarget": "Number.NaN",
+                "currVoltTarget": 2
+              }
+            ],
+            "sensorlessStartingPhase": "Number.NaN",
+            "onTheFlyStartupEnabled": false
+          },
+          "startupExitCond": {
+            "startUpSpeedThresh": "Number.NaN",
+            "consecutiveCorrectMeasures": "Number.NaN",
+            "speedBandToleranceLowerLimit": "Number.NaN",
+            "speedBandToleranceUpperLimit": "Number.NaN"
+          },
+          "FOCSwitchOver": {
+            "revupToFocSwitchOverEnabled": true,
+            "focSwitchOverDuration": "Number.NaN"
+          }
+        }
+      },
+      "driveManagement_0": {
+        "currentReg": {
+          "controlMode": "",
+          "autoPI": true,
+          "KpKi": {
+            "P": "Number.NaN",
+            "I": "Number.NaN"
+          },
+          "cutOffFrequency": "Number.NaN",
+          "useMTPA": false,
+          "feedForward": false,
+          "MTPATarget": "Number.NaN"
+        },
+        "speedReg": {
+          "executionRate": "Number.NaN",
+          "targetSpeed": "Number.NaN",
+          "commutationTime": "Number.NaN",
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          },
+          "autoPI": true
+        },
+        "torqueReg": {
+          "target": "Number.NaN",
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          }
+        },
+        "fluxReg": {
+          "target": "Number.NaN",
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          }
+        },
+        "fluxWeak": {
+          "enabled": false,
+          "voltageLimit": "Number.NaN",
+          "KpKi": {
+            "P": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            },
+            "I": {
+              "num": "Number.NaN",
+              "den": "Number.NaN"
+            }
+          }
+        },
+        "posReg": {
+          "executionRate": "Number.NaN",
+          "KpKiKd": {
+            "P": {
+              "num": 10000,
+              "den": 1024
+            },
+            "D": {
+              "num": 1000,
+              "den": 16
+            },
+            "I": {
+              "num": 1000,
+              "den": 32768
+            }
+          }
+        },
+        "debugSettings": {
+          "openLoop": {
+            "enabled": true
+          }
+        },
+        "modulationFlags": {
+          "overModulation": false,
+          "discontinuousPWM": false
+        }
+      }
+    }
+  }
 }

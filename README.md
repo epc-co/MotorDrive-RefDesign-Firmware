@@ -51,6 +51,7 @@ Use this table to find the firmware package that match you **inverter** and your
 |      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB5<br>*Nucleo G431RB*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB6<br>*Nucleo G431RB*<br>[Motor JSON](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json)| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*<br></br> | ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*<br></br>|
 |  ---:|:-:|:-:|:-:|:-:|:-:|
 |**Adapter Board →**|**[EPC9147A][epc9147a]**|**[EPC9147C][epc9147c]**|**[EPC9147C][epc9147c]**|**[EPC9147D][epc9147d]**|**[EPC9147B][epc9147b]**|
+|**[EPC91121][epc91121]**|-|-|**[Executables][out_stm32_epc91121]**<br>[Source Code][src_stm32_epc91121]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC91121.json)|-|-|
 |**[EPC91202][epc91202]**|-|-|**[Executables][out_stm32_epc91202]**<br>[Source Code][src_stm32_epc91202]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC91202.json)|-|-|
 |**[EPC91200][epc91200]**|-|-|**[Executables][out_stm32_epc91200]**<br>[Source Code][src_stm32_epc91200]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC91200.json)|-|-|
 |**[EPC9196][epc9196]**|-|-|**[Executables][out_stm32_epc9196]**<br>[Source Code][src_stm32_epc9196]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC9196.json)|-|-|
@@ -88,6 +89,7 @@ Use this table to find the firmware package that match you **inverter** and your
 [epc9147d]: https://epc-co.com/epc/products/evaluation-boards/epc9147d
 
 <!-- Inverter Boards -->
+[epc91121]: https://epc-co.com/epc/products/evaluation-boards/epc91121
 [epc91202]: https://epc-co.com/epc/products/evaluation-boards/epc91202
 [epc91200]: https://epc-co.com/epc/products/evaluation-boards/epc91200
 [epc91104]: https://epc-co.com/epc/products/evaluation-boards/epc91104
@@ -106,6 +108,7 @@ Use this table to find the firmware package that match you **inverter** and your
 
 <!-- Firmware Source & Packages -->
 <!-- STM32 -->
+[out_stm32_epc91121]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC91121_1_0-DummyNema34_50k_50n.zip
 [out_stm32_epc91202]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC91202_1_0-DummyNema34_50k_50n.zip
 [out_stm32_epc91200]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC91200_1_0-DummyNema34_50k_50n.zip
 [out_stm32_epc91104]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC91104_1_0-DummyNema34_50k_50n.zip
@@ -122,6 +125,7 @@ Use this table to find the firmware package that match you **inverter** and your
 [out_stm32_epc9186]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9186-DummyNema34_50k_100n_output.zip
 [out_stm32_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9194-DummyNema34_50k_100n_output.zip
 
+[src_stm32_epc91121]: /firmware/G431-EPC91121_1_0-DummyNema34_50k_50n/G431-EPC91121_1_0-DummyNema34_50k_50n.zip
 [src_stm32_epc91202]: /firmware/G431-EPC91202_1_0-DummyNema34_50k_50n/G431-EPC91202_1_0-DummyNema34_50k_50n.zip
 [src_stm32_epc91200]: /firmware/G431-EPC91200_1_0-DummyNema34_50k_50n/G431-EPC91200_1_0-DummyNema34_50k_50n.zip
 [src_stm32_epc91104]: /firmware/G431-EPC91104_1_0-DummyNema34_50k_50n/G431-EPC91104_1_0-DummyNema34_50k_50n.zip

@@ -51,6 +51,7 @@ Use this table to find the firmware package that match you **inverter** and your
 |      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB5<br>*Nucleo G431RB*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB6<br>*Nucleo G431RB*<br>[Motor JSON](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json)| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*<br></br> | ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*<br></br>|
 |  ---:|:-:|:-:|:-:|:-:|:-:|
 |**Adapter Board →**|**[EPC9147A][epc9147a]**|**[EPC9147C][epc9147c]**|**[EPC9147C][epc9147c]**|**[EPC9147D][epc9147d]**|**[EPC9147B][epc9147b]**|
+|**[EPC91202][epc91202]**|-|-|**[Executables][out_stm32_epc91202]**<br>[Source Code][src_stm32_epc91202]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC91202.json)|-|-|
 |**[EPC91200][epc91200]**|-|-|**[Executables][out_stm32_epc91200]**<br>[Source Code][src_stm32_epc91200]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC91200.json)|-|-|
 |**[EPC9196][epc9196]**|-|-|**[Executables][out_stm32_epc9196]**<br>[Source Code][src_stm32_epc9196]<br>[Board JSON](./STMCW6%20Boards%20and%20Motors/EPC9196.json)|-|-|
 |**[EPC9176][epc9176]**|**[Executables][out_mchp_epc9176]**<br>[Source Code][src_mchp_epc9176]|**[Executables][out_stm32_epc9176]**<br>[Source Code][src_stm32_epc9176]|-|-|**[Executables][out_ti]**<br>[Source Code][src_ti]|
@@ -87,6 +88,7 @@ Use this table to find the firmware package that match you **inverter** and your
 [epc9147d]: https://epc-co.com/epc/products/evaluation-boards/epc9147d
 
 <!-- Inverter Boards -->
+[epc91202]: https://epc-co.com/epc/products/evaluation-boards/epc91202
 [epc91200]: https://epc-co.com/epc/products/evaluation-boards/epc91200
 [epc91104]: https://epc-co.com/epc/products/evaluation-boards/epc91104
 [epc9196]: https://epc-co.com/epc/products/evaluation-boards/epc9196
@@ -104,21 +106,23 @@ Use this table to find the firmware package that match you **inverter** and your
 
 <!-- Firmware Source & Packages -->
 <!-- STM32 -->
-[out_stm32_epc91200]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC91200_1_0-DummyNema34_50k_50n.zip
-[out_stm32_epc91104]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC91104_1_0-DummyNema34_50k_50n.zip
-[out_stm32_epc9196]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC9196_1_0-DummyNema34_50k_50n.zip
-[out_stm32_epc91118_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/EPC91118_DummyNema_50kHz_50ns_sensorless.zip
-[out_stm32_epc91118_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/EPC91118_Unitree_100kHz_50ns_sensored.zip
-[out_stm32_epc91120_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/EPC91120_DummyNema_50kHz_50ns_sensorless.zip
-[out_stm32_epc91120_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/EPC91120_Unitree_100kHz_50ns_sensored.zip
-[out_stm32_epc91122_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/EPC91122_DummyNema_50kHz_50ns_sensorless.zip
-[out_stm32_epc91122_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/EPC91122_Unitree_100kHz_50ns_sensored.zip
-[out_stm32_epc9145]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC9145-DummyNema34_50k_100n_output.zip
-[out_stm32_epc9146]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC9146_2_1-DummyNema34_50k_100n_output.zip
-[out_stm32_epc9176]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC9176_1_0-DummyNema34_50k_100n_output.zip
-[out_stm32_epc9186]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC9186-DummyNema34_50k_100n_output.zip
-[out_stm32_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/G431-EPC9194-DummyNema34_50k_100n_output.zip
+[out_stm32_epc91202]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC91202_1_0-DummyNema34_50k_50n.zip
+[out_stm32_epc91200]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC91200_1_0-DummyNema34_50k_50n.zip
+[out_stm32_epc91104]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC91104_1_0-DummyNema34_50k_50n.zip
+[out_stm32_epc9196]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9196_1_0-DummyNema34_50k_50n.zip
+[out_stm32_epc91118_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/EPC91118_DummyNema_50kHz_50ns_sensorless.zip
+[out_stm32_epc91118_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/EPC91118_Unitree_100kHz_50ns_sensored.zip
+[out_stm32_epc91120_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/EPC91120_DummyNema_50kHz_50ns_sensorless.zip
+[out_stm32_epc91120_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/EPC91120_Unitree_100kHz_50ns_sensored.zip
+[out_stm32_epc91122_dummynema]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/EPC91122_DummyNema_50kHz_50ns_sensorless.zip
+[out_stm32_epc91122_unitree]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/EPC91122_Unitree_100kHz_50ns_sensored.zip
+[out_stm32_epc9145]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9145-DummyNema34_50k_100n_output.zip
+[out_stm32_epc9146]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9146_2_1-DummyNema34_50k_100n_output.zip
+[out_stm32_epc9176]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9176_1_0-DummyNema34_50k_100n_output.zip
+[out_stm32_epc9186]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9186-DummyNema34_50k_100n_output.zip
+[out_stm32_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/G431-EPC9194-DummyNema34_50k_100n_output.zip
 
+[src_stm32_epc91202]: /firmware/G431-EPC91202_1_0-DummyNema34_50k_50n/G431-EPC91202_1_0-DummyNema34_50k_50n.zip
 [src_stm32_epc91200]: /firmware/G431-EPC91200_1_0-DummyNema34_50k_50n/G431-EPC91200_1_0-DummyNema34_50k_50n.zip
 [src_stm32_epc91104]: /firmware/G431-EPC91104_1_0-DummyNema34_50k_50n/G431-EPC91104_1_0-DummyNema34_50k_50n.zip
 [src_stm32_epc9196]: /firmware/G431-EPC9196_1_0-DummyNema34_50k_50n/G431-EPC9196_1_0-DummyNema34_50k_50n.zip
@@ -135,20 +139,20 @@ Use this table to find the firmware package that match you **inverter** and your
 [src_stm32_epc9194]: /firmware/G431-EPC9194-DummyNema34_50k_100n/G431-EPC9194-DummyNema34_50k_100n.zip
 
 <!-- TI -->
-[out_ti]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/InstaSPIN_F2806xM_UNIVERSAL_output.zip
+[out_ti]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/InstaSPIN_F2806xM_UNIVERSAL_output.zip
 
 [src_ti]: /firmware/InstaSPIN_F2806xM_UNIVERSAL/InstaSPIN_F2806xM_UNIVERSAL.zip
 
 <!-- Renesas -->
-[out_renesas_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/RA6T2-EPC9194-DummyNema34-20k-2000n_output.zip
+[out_renesas_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/RA6T2-EPC9194-DummyNema34-20k-2000n_output.zip
 
 [src_renesas_epc9194]: /firmware/RA6T2-EPC9194-DummyNema34-20k-2000n/r01an6206xx0101-motor.zip
 
 <!-- Microchip -->
-[out_mchp_epc9146]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/sample-mb-33ep-epc9146_2_0_DummyNema34_14A_3_5A_1_5mohm_1_3krpm_100kHz_21ns_210412_output.zip
-[out_mchp_epc9145]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/sample-mb-33ep256mc506-mclv2.X-Dummy_9145_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_210806_output.zip
-[out_mchp_epc9176]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/sample-mb-33ep256mc506-mclv2.X-Dummy_9176_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_230125_output.zip
-[out_mchp_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/download/pkg-rel-1.3/sample-mb-33ep256mc506-mclv2.X-Dummy_9194_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_240625_output.zip
+[out_mchp_epc9146]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/sample-mb-33ep-epc9146_2_0_DummyNema34_14A_3_5A_1_5mohm_1_3krpm_100kHz_21ns_210412_output.zip
+[out_mchp_epc9145]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/sample-mb-33ep256mc506-mclv2.X-Dummy_9145_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_210806_output.zip
+[out_mchp_epc9176]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/sample-mb-33ep256mc506-mclv2.X-Dummy_9176_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_230125_output.zip
+[out_mchp_epc9194]: https://github.com/epc-co/MotorDrive-RefDesign-Firmware/releases/latest/download/sample-mb-33ep256mc506-mclv2.X-Dummy_9194_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_240625_output.zip
 
 [src_mchp_epc9146]: /firmware/sample-mb-33ep-epc9146_2_0_DummyNema34_14A_3_5A_1_5mohm_1_3krpm_100kHz_21ns_210412/sample-mb-33ep-epc9146_2_0_DummyNema34_14A_3_5A_1_5mohm_1_3krpm_100kHz_21ns_210412.zip
 [src_mchp_epc9145]: /firmware/sample-mb-33ep256mc506-mclv2.X-Dummy_9145_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_210806/sample-mb-33ep256mc506-mclv2.X-Dummy_9145_14A_3A_1_0mohm_1_3krpm_100kHz_50ns_210806.zip

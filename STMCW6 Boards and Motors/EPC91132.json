@@ -1,0 +1,314 @@
+{
+  "type": "inverter",
+  "contentVersion": "1.0",
+  "clockFrequency": 170,
+  "name": "EPC91132",
+  "algorithmCompatibility": [
+    "FOC"
+  ],
+  "PN": "EPC33110",
+  "longDescription": "Motor drive inverter board for MG8008E-i9 and Vertiq 23-06 motors\nUsing EPC33110 three-phase module",
+  "mcu": "STM32G431KBUx",
+  "clockSource": "internal_osc",
+  "motorDrives": [
+    {
+      "name": "EPC91132",
+      "minRatedVoltage": 10,
+      "maxRatedVoltage": 60,
+      "maxRatedCurrent": 15,
+      "maxRatedPower": 700,
+      "features": [
+        {
+          "type": "CurrentSensing",
+          "name": "CurrentSensing",
+          "tRise": 100,
+          "hwVariants": [
+            {
+              "signals": {
+                "CURRENT_ICS_U": [
+                  {
+                    "name": "PA5",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "CURRENT_ICS_V": [
+                  {
+                    "name": "PB0",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "TwoICSCurrents",
+              "cost": 0,
+              "help": {
+                "en": ""
+              },
+              "icsGain": 0.044
+            }
+          ]
+        },
+        {
+          "type": "OverCurrentProtection",
+          "name": "OverCurrentProtection",
+          "hwVariants": [
+            {
+              "signals": {
+                "OC_TRIGGER": [
+                  {
+                    "name": "PA6",
+                    "help": {},
+                    "cost": 0
+                  },
+                  {
+                    "name": "PA15",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "OnPowerStageOCP",
+              "cost": 0,
+              "OCComparatorThreshold": 30,
+              "OCNetworkGain": 1,
+              "OCNetworkOffset": 0,
+              "OCThreshold": 30,
+              "OCSignalPolarity": "Active low"
+            }
+          ]
+        },
+        {
+          "type": "VBusSensing",
+          "name": "VBusSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "VBUS": [
+                  {
+                    "name": "PF1-OSC_OUT",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "VBusSensing",
+              "cost": 0,
+              "busVoltageDividerR1": 100000,
+              "busVoltageDividerR2": 5360,
+              "busVoltageDivider": 19.658
+            }
+          ],
+          "busVoltageDivider": 19.658
+        },
+        {
+          "type": "TemperatureSensing",
+          "name": "TemperatureSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "TEMPERATURE_NTC": [
+                  {
+                    "name": "PA0",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "NTCThermistor",
+              "cost": 0,
+              "maxSensorTemperature": 150,
+              "gain": 14.3,
+              "t0": 25,
+              "v0": 1650
+            }
+          ]
+        },
+        {
+          "type": "SpeedAndPositionSensing",
+          "name": "SpeedAndPositionSensing",
+          "hwVariants": [
+            {
+              "signals": {
+                "QENC_A": [
+                  {
+                    "name": "PB4",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_B": [
+                  {
+                    "name": "PB5",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_Z": [
+                  {
+                    "name": "PB7",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "QuadratureEncoderAbsolute",
+              "cost": 0
+            },
+            {
+              "signals": {
+                "QENC_A": [
+                  {
+                    "name": "PB4",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "QENC_B": [
+                  {
+                    "name": "PB5",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "QuadratureEncoderRelative",
+              "cost": 0
+            }
+          ]
+        },
+        {
+          "type": "PhaseVoltageGeneration",
+          "name": "PhaseVoltageGeneration",
+          "tNoise": 100,
+          "maxSwitchingFreq": 100,
+          "driverPN": "01",
+          "minDeadTime": 20,
+          "hwVariants": [
+            {
+              "signals": {
+                "PWM_CHU_H": [
+                  {
+                    "name": "PA8",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHV_H": [
+                  {
+                    "name": "PA9",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHW_H": [
+                  {
+                    "name": "PA10",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHU_L": [
+                  {
+                    "name": "PA11",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHV_L": [
+                  {
+                    "name": "PA12",
+                    "help": {},
+                    "cost": 0
+                  }
+                ],
+                "PWM_CHW_L": [
+                  {
+                    "name": "PF0-OSC_IN",
+                    "help": {},
+                    "cost": 0
+                  }
+                ]
+              },
+              "type": "DrivingHighAndLowSides",
+              "cost": 0,
+              "highSideSwitchesDrivingPolarity": "Active high",
+              "deadTime": 100,
+              "lowSideSwitchesDrivingPolarity": "Active high"
+            }
+          ],
+          "driverName": "EPC33110"
+        }
+      ]
+    }
+  ],
+  "descVersion": 4,
+  "features": [
+    {
+      "type": "Button",
+      "name": "Button",
+      "hwVariants": [
+        {
+          "signals": {
+            "BUTTON_TRIGGER": [
+              {
+                "name": "PB6",
+                "help": {},
+                "cost": 0
+              }
+            ]
+          },
+          "type": "PushButton",
+          "cost": 0,
+          "buttonTriggerEdge": "Rising Edge",
+          "buttonGpioConfig": "No Pull up - No Pull down"
+        }
+      ]
+    },
+    {
+      "type": "SerialPortCommunication",
+      "name": "SerialPortCommunication",
+      "hwVariants": [
+        {
+          "signals": {
+            "UART_TX": [
+              {
+                "name": "PA2",
+                "help": {},
+                "cost": 0
+              }
+            ],
+            "UART_RX": [
+              {
+                "name": "PA3",
+                "help": {},
+                "cost": 0
+              }
+            ]
+          },
+          "type": "Uart2WiresCommunication",
+          "cost": 0
+        }
+      ]
+    },
+    {
+      "type": "ElectronicSpeedControl",
+      "name": "ElectronicSpeedControl",
+      "hwVariants": [
+        {
+          "signals": {
+            "PWM_ESC_INPUT": [
+              {
+                "name": "PA15",
+                "help": {},
+                "cost": 0
+              }
+            ]
+          },
+          "type": "ESCPWMControl",
+          "cost": 0
+        }
+      ]
+    }
+  ]
+}

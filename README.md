@@ -18,35 +18,36 @@ Each reference design is composed of 4 pieces:
 
 **Setup example**:
 
-- STM32 Nucleo G431RB +  EPC9147C + EPC9167HC + Teknic Motor M-3411P-LN-08D
+- STM32 Nucleo G431RB +  EPC9147C + EPC9176 + Teknic Motor M-3411P-LN-08D
 
 > There are several combinations, follow the instruction on the [Cross-Reference Table](#cross-reference-table) or on the [Excel sheet ](/FindYourFirmwarePackage.xlsx) to download proper package.
 
-### Teknic Motor
+## Supported Motors
 
-All *Reference Designs* firmware have been develop for the motor: ***Teknic M-3411P-LN-08D***
+We currently support and provide optimized firmware for the following motor types. Each motor configuration has been thoroughly tested across our supported power boards and microcontroller families.
 
-![Motor Teknic M-3411P-LN-08D](https://teknic.com/images/hudson_341.png)
+| Motor Image | Model | Description | Useful Links |
+| :---: | :--- | :--- | :--- |
+| ![Motor Teknic M-3411P-LN-08D](https://teknic.com/images/hudson_341.png) | ***Teknic M-3411P-LN-08D*** | General-purpose high-efficiency brushless motor suitable for industrial automation and general drive applications. Supports both sensorless and sensored (optical encoder/hall) feedback. | • [Motor Website](https://teknic.com/hudson-model/M-3411P-LN-08D/) |
+| <img src="assets/Motor Unitree A1.png" width="150" alt="Unitree A1 Motor"> | ***Unitree A1*** | BLDC motor with high gear-ratio reducer for robotic applications. Shaft-mounted magnet for position sensing. | • [Motor Website](https://www.unitree.com/a1/motor) |
+| <img src="assets/Motor MG8008E-i9.png" width="150" alt="MG8008E-i9 Motor"> | ***MG8008E-i9*** | BLDC motor with high gear-ratio reducer for robotic applications. Shaft-mounted magnet for position sensing. |  |
 
-*Image: courtesy of Teknic, Inc.*
+> 💡 **Note:** related JSON files for *ST Motor Control Workbench 6* are available below
 
-#### Useful Resources
 
-- [Motor Website](https://teknic.com/hudson-model/M-3411P-LN-08D/)
-
-### Cross-Reference Table
+## Cross-Reference Table
 
 Use this table to find the firmware package that match you **inverter** and your **microcontroller**.
 
-#### Boards w/ integrated MCU
+### Boards w/ integrated MCU
 
-|      | Teknic Motor (*DummyNema*)<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json) | Unitree A1 Motor<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/unitree_a1.json) |
-|  ---:|:-:|:-:|
-|**[EPC91118][epc91118]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91118.json)|*Sensorless*<br>**[Executables][out_stm32_epc91118_dummynema]**<br>[Source Code][src_stm32_epc91118_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91118_unitree]**<br>[Source Code][src_stm32_epc91118_unitree]|
-|**[EPC91120][epc91120]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91120.json)|*Sensorless*<br>**[Executables][out_stm32_epc91120_dummynema]**<br>[Source Code][src_stm32_epc91120_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91120_unitree]**<br>[Source Code][src_stm32_epc91120_unitree]|
-|**[EPC91122][epc91122]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91122.json)|*Sensorless*<br>**[Executables][out_stm32_epc91122_dummynema]**<br>[Source Code][src_stm32_epc91122_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91122_unitree]**<br>[Source Code][src_stm32_epc91122_unitree]|
+|      | Teknic Motor (*DummyNema*)<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json) | Unitree A1 Motor<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/unitree_a1.json) | MG8008E-i9 Motor<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/MG8008E-i9.json) |
+|  ---:|:-:|:-:|:-:|
+|**[EPC91118][epc91118]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91118.json)|*Sensorless*<br>**[Executables][out_stm32_epc91118_dummynema]**<br>[Source Code][src_stm32_epc91118_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91118_unitree]**<br>[Source Code][src_stm32_epc91118_unitree]| |
+|**[EPC91120][epc91120]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91120.json)|*Sensorless*<br>**[Executables][out_stm32_epc91120_dummynema]**<br>[Source Code][src_stm32_epc91120_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91120_unitree]**<br>[Source Code][src_stm32_epc91120_unitree]| |
+|**[EPC91122][epc91122]**<br>[STMCWB6 Desc (JSON)](./STMCW6%20Boards%20and%20Motors/EPC91122.json)|*Sensorless*<br>**[Executables][out_stm32_epc91122_dummynema]**<br>[Source Code][src_stm32_epc91122_dummynema]|*Sensored*<br>**[Executables][out_stm32_epc91122_unitree]**<br>[Source Code][src_stm32_epc91122_unitree]| |
 
-#### Boards w/ MCU interface connector
+### Boards w/ MCU interface connector
 
 |      | ![](assets/Microchip_Logo%20(Custom).png)<br>Microchip<br>*MA330031-2 PIM*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB5<br>*Nucleo G431RB*<br></br>| ![](assets/ST_Logo%20(Custom).png)<br>STM32 WB6<br>*Nucleo G431RB*<br>[Motor JSON](./STMCW6%20Boards%20and%20Motors/epc_dummy_nema_motor.json)| ![](assets/Renesas_Logo%20(Custom).png)<br>Renesas<br>*RA6T2*<br></br> | ![](assets/TI_Logo%20(Custom).png)<br>TI<br>*LaunchXL-F28069M*<br></br>|
 |  ---:|:-:|:-:|:-:|:-:|:-:|

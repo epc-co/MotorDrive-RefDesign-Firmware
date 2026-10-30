@@ -1,0 +1,26 @@
+{
+    "hardwareFamily": "MOTOR",
+    "label": "MG8008E-i9",
+    "description": "V3",
+    "polePairs": 21,
+    "nominalCurrent": 17,
+    "nominalDCVoltage": 60,
+    "rs": 0.39,
+    "ls": 0.2,
+    "magneticStructure": {
+        "type": "SM-PMSM"
+    },
+    "BEmfConstant": 14.9,
+    "inertia": 1520,
+    "friction": 8.6,
+    "maxRatedSpeed": 2000,
+    "quadratureEncoder": {
+        "pulsesPerMechanicalRevolution": 1024,
+        "hasIndexPin": true
+    },
+    "compatibility": [
+        "FOC",
+        "sixStep"
+    ],
+    "id": "MG8008E-i9"
+}
